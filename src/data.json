@@ -1,0 +1,18 @@
+{
+  "foods": [
+    {
+      "recipe": "hello",
+      "directions": "hi",
+      "ingredients": "hello",
+      "favorites": true,
+      "id": 1
+    },
+    {
+      "recipe": "someone",
+      "directions": "somewhere",
+      "ingredients": "in the sky",
+      "favorites": true,
+      "id": 2
+    }
+  ]
+}

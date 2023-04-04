@@ -1,0 +1,301 @@
+body {
+  background: rgb(209, 209, 209);
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1%;
+}
+
+div.App h1 {
+  text-align: center;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.185)
+}
+
+.new-recipe-link {
+  padding: 10px 0;
+  border-radius: 20px;
+  width: 30%;
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  background: white;
+  display: block;
+  margin: 1rem 35%;
+  text-align: center;
+}
+
+.new-recipe-link:hover {
+  background: rgb(29, 29, 29);
+  color: white;
+  box-shadow: 1px 1px 5px rgb(79, 79, 79);
+}
+
+.delete-button {
+  padding: 10px 30px;
+  border-radius: 20px;
+  margin-left: 1rem;
+  margin-top: 2.2rem;
+  border: none;
+  float: right;
+  background: red;
+  color: white;
+}
+
+.delete-button:hover {
+  background: rgb(255, 27, 27);
+  box-shadow: 1px 1px 4px rgb(103, 0, 0);
+}
+
+.food-preview {
+  background: white;
+  padding: .5rem 1%;
+  margin: 1rem 0;
+}
+
+.food-preview:hover {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.487);
+}
+
+.food-list-link {text-decoration: none;}
+
+.food-list-name {
+  color: black;
+}
+
+.food-list-ingredients {color: rgb(66, 66, 66);}
+
+.create label {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: .5rem;
+}
+
+.create input {
+  width: 100%;
+  margin: 0 0 1rem 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  padding: 1rem 10px;
+  font-size: 1rem;
+}
+
+.create input:hover {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.487);
+}
+
+.create textarea {
+  width: 100%;
+  margin: 0 0 1rem 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  padding: 1rem 10px;
+  font-size: 1rem;
+}
+
+.create textarea:hover {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.487);
+}
+
+.create-button {
+  padding: 10px 0;
+  border-radius: 20px;
+  width: 30%;
+  color: black;
+  font-size: 1rem;
+  background: rgb(144, 144, 144);
+  margin: 1rem 0;
+  text-align: center;
+  border: none;
+  float: right;
+}
+
+.create-button:hover {
+  background: rgb(0, 17, 255);
+  color: white;
+  box-shadow: 1px 1px 5px rgb(79, 79, 79);
+}
+
+.back-to-home {
+  display: block;
+  padding: 10px 0;
+  border-radius: 20px;
+  width: 30%;
+  color: black;
+  font-size: 1rem;
+  background: white;
+  margin: 1rem 0;
+  text-align: center;
+  border: none;
+  text-decoration: none;
+}
+
+.back-to-home:hover {
+  background: rgb(29, 29, 29);
+  color: white;
+  box-shadow: 1px 1px 5px rgb(79, 79, 79);
+}
+
+.details-ingredients {
+  color: rgb(66, 66, 66);
+}
+
+.details-directions {
+  padding-bottom: 1rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.185);
+  margin-bottom: 1rem;
+}
+
+i.fa-solid.fa-star {
+  font-size: 2rem;
+  color: yellow;
+  float: right;
+  margin-left: 2rem;
+}
+
+.back-to-list {
+  display: block;
+  padding: 10px 0;
+  border-radius: 20px;
+  width: 20%;
+  color: black;
+  font-size: 1rem;
+  background: white;
+  margin: 1rem 0;
+  text-align: center;
+  border: none;
+  text-decoration: none;
+  float: left;
+}
+
+.back-to-list:hover {
+  background: rgb(29, 29, 29);
+  color: white;
+  box-shadow: 1px 1px 5px rgb(79, 79, 79);
+}
+
+.details-edit {
+  padding: 10px 0;
+  border-radius: 20px;
+  width: 20%;
+  color: black;
+  font-size: 1rem;
+  background: white;
+  margin: 1rem 20%;
+  border: none;
+}
+
+.details-edit:hover {
+  background: rgb(255, 255, 0);
+  color: rgb(0, 0, 0);
+  box-shadow: 1px 1px 5px rgb(136, 136, 0);
+}
+
+.unlike {
+  padding: 10px 0;
+  border-radius: 20px;
+  width: 20%;
+  color: black;
+  font-size: 1rem;
+  background: white;
+  margin: 1rem 0;
+  border: none;
+  float: right;
+}
+
+.unlike:hover {
+  background: red;
+  color: white;
+  box-shadow: 1px 1px 4px rgb(103, 0, 0);
+}
+
+.like {
+  padding: 10px 0;
+  border-radius: 20px;
+  width: 20%;
+  color: black;
+  font-size: 1rem;
+  background: white;
+  margin: 1rem 0;
+  border: none;
+  float: right;
+}
+
+.like:hover {
+  background: green;
+  color: white;
+  box-shadow: 1px 1px 4px rgb(0, 77, 0);
+}
+
+.edit label {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: .5rem;
+}
+
+.edit input {
+  width: 100%;
+  margin: 0 0 1rem 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  padding: 1rem 10px;
+  font-size: 1rem;
+}
+
+.edit input:hover {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.487);
+}
+
+.edit textarea {
+  width: 100%;
+  margin: 0 0 1rem 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  padding: 1rem 10px;
+  font-size: 1rem;
+}
+
+.edit textarea:hover {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.487);
+}
+
+.save {
+  padding: 10px 0;
+  border-radius: 20px;
+  width: 30%;
+  color: black;
+  font-size: 1rem;
+  background: rgb(144, 144, 144);
+  margin: 1rem 0;
+  text-align: center;
+  border: none;
+  float: right;
+}
+
+.save:hover {
+  background: rgb(0, 17, 255);
+  color: white;
+  box-shadow: 1px 1px 5px rgb(79, 79, 79);
+}
+
+.cancel {
+  padding: 10px 0;
+  border-radius: 20px;
+  width: 30%;
+  color: black;
+  font-size: 1rem;
+  background: white;
+  margin: 1rem 0;
+  text-align: center;
+  border: none;
+  float: left;
+}
+
+.cancel:hover {
+  background: rgb(29, 29, 29);
+  color: white;
+  box-shadow: 1px 1px 5px rgb(79, 79, 79);
+}
