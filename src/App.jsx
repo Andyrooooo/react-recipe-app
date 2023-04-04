@@ -177,7 +177,7 @@ function App() {
           {!favorite && <button className="unlike" onClick={() => myFavorite(id)}>Unlike</button>} {/* has issues staying on its supposed star */}
           {favorite && <button className="like" value={favorite} onClick={() => notFavorite(id)}>Like</button>}
 
-          </div>}
+          </div>} 
           
 {/* --------------------------------------------------edit buttons and inputs */}
             {edit && <form className="edit" onSubmit={(e) => resubmit(food.id, e)}>
