@@ -2,6 +2,7 @@ import './App.css'
 import {BrowserRouter as Router, Route, Routes, useParams} from 'react-router-dom'
 import {Link} from 'react-router-dom'
 import {useState, useEffect} from 'react'
+import {useNavigate} from 'react-router-dom'
 
 
 function App() {
@@ -97,6 +98,7 @@ function App() {
     const [ingredients, setIngredients] = useState('')
     const favorites = false
     const [favorite, setFavorite] = useState(false)
+    const navigate = useNavigate()
 
 /* ---------------------------This changes the list to a new name, recipe, and ingredients, and also gives us a default of false for our favorite */
     const resubmit = (id, e) => {
@@ -108,7 +110,7 @@ function App() {
       fetch('http://localhost:8000/foods/' + id, {
         method: 'PUT', 
         headers: {"Content-Type": "application/json"},
-        body: JSON.stringify(food)}).then(() => {window.location.reload(true)})
+        body: JSON.stringify(food)}).then(() => {navigate('/')})/* .then(() => {window.location.reload(true)}) */
       setRecipe('')
       setDirections('')
       setIngredients('')
