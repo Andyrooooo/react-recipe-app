@@ -4,13 +4,13 @@
       "recipe": "hello",
       "directions": "hi",
       "ingredients": "hello",
-      "favorites": true,
+      "favorites": false,
       "id": 1
     },
     {
-      "recipe": "my",
-      "directions": "names",
-      "ingredients": "zeus",
+      "recipe": "ghost ",
+      "directions": "in the",
+      "ingredients": "graveyard",
       "favorites": false,
       "id": 2
     }
