@@ -37,7 +37,7 @@ function App() {
 
   /* home section--------------------------------------------------- */
       function Home() {
-        const {data: foods, isPending} = useFetch('http://localhost:8000/foods')
+        const {data: foods, isPending} = useFetch('https://wry-grass-burrito.glitch.me/foods')
 
         return (
           <div className="home">
@@ -64,7 +64,7 @@ function App() {
         {foods.map((food) => (
           <div className="food-preview" key={food.id}>
 
-            <button className="delete-button" onClick={() => fetch('http://localhost:8000/foods/' + food.id, {method: 'DELETE'})
+            <button className="delete-button" onClick={() => fetch('https://wry-grass-burrito.glitch.me/foods/' + food.id, {method: 'DELETE'})
             .then(() => {window.location.reload(true)})}>
             Delete
             </button>
@@ -91,7 +91,7 @@ function App() {
   /* recipe details------------------------------------------------------------------------------------------------------------ */
   function FoodDetails() {
     const {id} = useParams()
-    const {data: food, isPending} = useFetch('http://localhost:8000/foods/' + id)
+    const {data: food, isPending} = useFetch('https://wry-grass-burrito.glitch.me/foods/' + id)
     const [edit, setEdit] = useState(false)
     const [recipe, setRecipe] = useState('')
     const [directions, setDirections] = useState('')
@@ -107,7 +107,7 @@ function App() {
       const food = {recipe, directions, ingredients, favorites}
       
 
-      fetch('http://localhost:8000/foods/' + id, {
+      fetch('https://wry-grass-burrito.glitch.me/foods/' + id, {
         method: 'PUT', 
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify(food)}).then(() => {navigate('/')})/* .then(() => {window.location.reload(true)}) */
@@ -125,7 +125,7 @@ function App() {
       /* console.log(id) */
       setFavorite(true)
       
-      fetch('http://localhost:8000/foods/' + id,
+      fetch('https://wry-grass-burrito.glitch.me/foods/' + id,
       {method: 'PATCH',
        headers: {"Content-Type": "application/json"},
        body: JSON.stringify({favorites: favorite})})
@@ -137,7 +137,7 @@ function App() {
       /* console.log(id) */
       setFavorite(false)
       /* console.log(food.favorites) */
-      fetch('http://localhost:8000/foods/' + id, 
+      fetch('https://wry-grass-burrito.glitch.me/foods/' + id, 
       {method: 'PATCH',
        headers: {"Content-Type": "application/json"},
        body: JSON.stringify({favorites: favorite})})
@@ -229,7 +229,7 @@ function App() {
         const food = {recipe, directions, ingredients, favorites}
         /* const food = {recipe, directions, ingredients} */
 
-        fetch('http://localhost:8000/foods', {
+        fetch('https://wry-grass-burrito.glitch.me/foods', {
           method: 'POST', 
           headers: {"Content-Type": "application/json"},
           body: JSON.stringify(food)
